@@ -7,11 +7,141 @@
 }
 
 body {
-  font-family: "Libre Franklin", sans-serif;
+  align-items: center;
+  background-color: #ff7979;
+  background-image: url(../ressources/bg-intro-mobile.png);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  max-width: 90rem;
+  min-height: 100vh;
 }
 
+main {
+  margin: 88px 24px 68px 24px;
+}
+
+/* CSS SECTION BOX-ONE */
+
+h1 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.box-one {
+  margin-bottom: 64px;
+}
+
+.box-one p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* CSS SECTION BOX-TWO */
+
+.box-two p:nth-child(1) {
+  background-color: #5e54a4;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  height: 88px;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+  margin-bottom: 24px;
+  padding: 18px 68px;
+  text-align: center;
+}
+
+/* CSS FORM */
+
+.form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  height: 442px;
+  padding: 24px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control small {
+  display: none;
+  color: #ff7979;
+  font-size: 0.6875rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: end;
+}
+
+input {
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  color: #3d3b48;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  height: 56px;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  opacity: 0.75;
+  padding: 15px 0 15px 20px;
+}
+
+button {
+  background-color: #38cc8b;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  height: 56px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.form p {
+  color: #bab7d4;
+  font-size: .6875rem;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  width: 90%;
+}
+
+.form p span {
+  color: #ff7979;
+  font-size: .6875rem;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* CSS FOOTER */
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
