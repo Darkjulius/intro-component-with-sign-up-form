@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   justify-content: center;
-  max-width: 90rem;
   min-height: 100vh;
 }
 
@@ -36,6 +35,7 @@ h1 {
 
 .box-one {
   margin-bottom: 64px;
+  width: 100%;
 }
 
 .box-one p {
@@ -48,6 +48,10 @@ h1 {
 
 /* CSS SECTION BOX-TWO */
 
+.box-two {
+  width: 100%;
+}
+
 .box-two p:nth-child(1) {
   background-color: #5e54a4;
   border-radius: 10px;
@@ -55,7 +59,7 @@ h1 {
   color: #ffffff;
   font-size: 0.9375rem;
   font-weight: 400;
-  height: 88px;
+  height: auto;
   letter-spacing: 0.3px;
   line-height: 26px;
   margin-bottom: 24px;
@@ -124,16 +128,17 @@ button {
 
 .form p {
   color: #bab7d4;
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   font-weight: 500;
   line-height: 21px;
+  margin: 0 auto;
   text-align: center;
   width: 90%;
 }
 
 .form p span {
   color: #ff7979;
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   line-height: 21px;
 }
@@ -146,4 +151,48 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 830px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .box-one{
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  h1{
+    text-align: left;
+  }
+
+  .box-one p{
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../ressources/bg-intro-desktop.png);
+  }
+  main {
+    margin: 121px 165px;
+  }
+
+  .box-one {
+    margin: 0 45px 0 0;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    line-height: 55px;
+  }
+
+  
+
+  .form {
+    padding: 40px;
+  }
 }
