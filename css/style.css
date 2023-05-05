@@ -81,6 +81,14 @@ body {
   width: 100%;
 }
 
+.form-control.error input {
+  border-color: #ff7979;
+}
+
+.form-control.success input {
+  border-color: #38cc8b;
+}
+
 input::placeholder {
   color: #3d3b48;
   font-size: 0.875rem;
@@ -96,6 +104,21 @@ input::placeholder {
   position: absolute;
   right: 19px;
   top: 15px;
+  visibility: hidden;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #ff7979;
+  visibility: visible;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #38cc8b;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #ff7979;
 }
 
 .form button {
