@@ -16,11 +16,17 @@ body {
 }
 
 .container {
-  padding: 88px 24px 68px 24px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
 }
 
 /* SECTION BLOCK1 */
+
+.block1 {
+  margin-top: 88px;
+}
 .block1 h1 {
   color: #fff;
   font-size: 1.75rem;
@@ -42,6 +48,11 @@ body {
 }
 
 /* SECTION BLOCK2 */
+
+.block2 {
+  margin-bottom: 51px;
+}
+
 .block2 p:nth-child(1) {
   background-color: #5e54a4;
   border-radius: 10px;
@@ -64,11 +75,11 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-  margin-bottom: 24px;
   padding: 24px;
 }
 
 .form-control {
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -160,4 +171,40 @@ input::placeholder {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/****** MEDIA QUERIES ******/
+@media screen and (min-width: 694px) {
+  .block1 p {
+    margin-bottom: 54px;;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .block1 {
+    margin-top: 0;
+    width: 45%;
+  }
+
+  .block1 h1 {
+    font-size: 3.125rem;
+    line-height: 55px;
+    text-align: left;
+  }
+
+  .block1 p {
+    text-align: left;
+  }
+
+  .block2 {
+    margin-bottom: 0;
+  }
 }
